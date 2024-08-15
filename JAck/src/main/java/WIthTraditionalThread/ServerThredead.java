@@ -17,8 +17,8 @@ public class ServerThredead extends Thread{
             while (true){
                 Socket S=SS.accept();
                 numberofclients++;
-                Thread T=new Thread(new VirtualThreadTaker(S,numberofclients));
-                T.start();
+               // Thread T=new Thread(new VirtualThreadTaker(S,numberofclients));
+               // T.start();
 
             }
         } catch (IOException e) {

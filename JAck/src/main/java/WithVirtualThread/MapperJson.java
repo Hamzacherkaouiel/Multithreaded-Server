@@ -9,7 +9,7 @@ public class MapperJson {
     ObjectMapper OM;
 
 
-    public <T> T ConvertToJavaObject(String Json, TypeReference<T> Type) {
+    public  <T> T ConvertToJavaObject(String Json, TypeReference<T> Type) {
         OM = new ObjectMapper();
         T Object;
         try {
