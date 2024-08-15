@@ -65,38 +65,6 @@ public class VirtualThreadTaker implements  Runnable{
                             P.println(response);
                         }
                     }
-                        /*if (method.equals("POST") && Path.equals("/PostCar")) {
-                            MapperJson MJ = new MapperJson();
-                            Car Created = MJ.ConvertToJavaObject(HttpComing.getBody(), new TypeReference<Car>() {
-                            });
-                            Cars.add(Created);
-                            String response=Http.ResponseText(null);
-                           /* P.println("HTTP/1.1 200 OK\r\n" +
-                                    "Content-Type: text/plain\r\n" +
-                                    "Content-Length: 0\r\n" +
-                                    "Connection: keep-alive\r\n" + // Connexion persistante
-                                    "\r\n");
-                            P.println(response);
-
-                        } else {
-                            if (method.equals("GET") && Path.equals("/GetCars")) {
-                                MapperJson MJ = new MapperJson();
-                                String Json = MJ.ConvertToJson(Cars);
-                                /*StringBuilder GetBuilder = new StringBuilder();
-                                GetBuilder.append("HTTP/1.1 200 OK\r\n");
-                                GetBuilder.append("Content-Type: application/json\r\n");
-                                GetBuilder.append("Content-Length: ").append(Json.length()).append("\r\n");
-                                GetBuilder.append("Connection: keep-alive\r\n"); // Connexion persistante
-
-                                GetBuilder.append("\r\n");  // Ligne vide entre les en-têtes HTTP et le corps
-                                GetBuilder.append(Json);
-                                String response=Http.RessponseJson(Json);
-
-                                P.println(response);
-                            }*/
-
-
-
                         }
                        }
 
