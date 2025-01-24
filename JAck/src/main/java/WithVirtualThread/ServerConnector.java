@@ -32,7 +32,7 @@ public class ServerConnector extends Thread{
     }
     public void takeAllApis(){
         Apis=new HashMap<>();
-        Reflections reflections = new Reflections("WithVirtualThread"); // Remplacez par votre package
+        Reflections reflections = new Reflections("WithVirtualThread"); 
         Set<Class<?>> anotatedClasses =reflections.getTypesAnnotatedWith(OwnAnotation.class);
         for(Class<?> Anoted : anotatedClasses){
             try {
